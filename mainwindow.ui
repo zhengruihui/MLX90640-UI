@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>720</height>
+    <width>1500</width>
+    <height>768</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -21,20 +21,17 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
-    <property name="spacing">
-     <number>4</number>
-    </property>
     <property name="leftMargin">
-     <number>4</number>
+     <number>6</number>
     </property>
     <property name="topMargin">
-     <number>4</number>
+     <number>6</number>
     </property>
     <property name="rightMargin">
-     <number>4</number>
+     <number>6</number>
     </property>
     <property name="bottomMargin">
-     <number>4</number>
+     <number>6</number>
     </property>
     <item>
      <widget class="QTableWidget" name="tableWidget">
@@ -52,15 +49,20 @@
       </property>
       <property name="font">
        <font>
-        <family>Adobe Devanagari</family>
+        <family>微软雅黑</family>
         <pointsize>10</pointsize>
-        <weight>75</weight>
+        <weight>50</weight>
         <italic>false</italic>
-        <bold>true</bold>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QTableWidget::item{
+color:#ffffff;
+vertical-align: middle;
+text-align: center;
+font: 75 8pt &quot;微软雅黑&quot;;
+}</string>
       </property>
       <property name="autoScrollMargin">
        <number>16</number>
@@ -72,7 +74,7 @@
        <bool>true</bool>
       </attribute>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>38</number>
+       <number>40</number>
       </attribute>
       <attribute name="horizontalHeaderMinimumSectionSize">
        <number>0</number>
@@ -84,7 +86,7 @@
        <bool>true</bool>
       </attribute>
       <attribute name="verticalHeaderDefaultSectionSize">
-       <number>31</number>
+       <number>30</number>
       </attribute>
       <attribute name="verticalHeaderMinimumSectionSize">
        <number>0</number>

@@ -9,7 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    //ui->tableWidget->textElideMode();
     udp_socket = new QUdpSocket;
     udp_socket->bind(QHostAddress("192.168.1.139"), 168);
     udp_socket->
